@@ -1,0 +1,61 @@
+body{
+  background-image: url(/img/buscar1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+
+.row{
+  padding-top: 3px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+}
+
+.menup{
+background-color: aqua;
+padding-bottom: 13px;
+padding-top: 5px;
+text-align: center;
+color:
+rgb(31, 31, 77);
+}
+
+.col1{
+height:1px ;
+display: flex;
+justify-content: flex-end
+}
+
+button{
+margin: 5px;
+margin-right: 20px;
+background-color:
+rgb(31, 31, 77);
+position: relative;
+bottom: 60px;
+}
+
+
+
+
+footer{
+  padding-bottom: 93px;
+  height: 90px;
+  top: 31px;
+  margin-top: 42px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color:
+  rgb(31, 31, 77);
+}
+
+footer h3{
+  text-align: center;
+  color: bisque;
+
+}
+
+footer a{
+  color: red;
+}

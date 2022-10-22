@@ -1,0 +1,58 @@
+.row{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+  }
+  
+  .menup{
+  background-color: aqua;
+  padding-bottom: 13px;
+  padding-top: 5px;
+  text-align: center;
+  color:
+  rgb(31, 31, 77);
+  }
+  
+  .col1{
+  height:1px ;
+  display: flex;
+  justify-content: flex-end
+  }
+  
+  h6{
+    padding-bottom: 50px;
+    margin: 5px;
+    margin-right: 20px;
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    bottom: 60px;
+    }
+  
+
+.col3{
+    padding-left: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding-bottom: 85px;
+    height: 115px;
+    top: 68px;
+    margin-top: 162px;
+    position: relative;
+    background-color:
+    rgb(31, 31, 77);
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+
+}
+
+footer a{
+    color: red;
+}

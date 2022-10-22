@@ -1,0 +1,121 @@
+
+
+body{
+    background-image: url(/img/enfermera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.formulario1{
+    max-width: 45rem;
+    padding: 1.3rem;
+    margin-top: 10px;
+    background-color: rgba(120, 119, 123, 0.3);
+    font-weight: bold;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+}
+
+
+.row{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+.menup{
+background-color: aqua;
+padding-bottom: 13px;
+padding-top: 5px;
+text-align: center;
+color:
+rgb(31, 31, 77);
+}
+
+.col1{
+height:1px ;
+display: flex;
+justify-content: flex-end
+}
+
+button{
+margin: 5px;
+margin-right: 20px;
+background-color:
+rgb(31, 31, 77);
+position: relative;
+bottom: 59px;
+}
+
+
+
+
+.col3{
+    padding-left: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.principal{
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    right: 80px;
+    top: 20px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:50px ;
+    margin-right: 130px;
+    max-width: 490px;
+}
+
+
+
+.centro{
+    text-align: center;
+    margin: 9px;
+    margin-left: 10px;
+    padding-left: 100px;
+    margin-right:10px;
+    padding-right: 100px;
+    padding-top: 30px;
+    background-color:
+     aqua;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.contenedor3{
+  margin-top: 4rem;
+ display: flex;
+ margin-left: rem;
+}
+
+
+
+footer{
+    padding-bottom: 85px;
+    height: 115px;
+    top: 38px;
+    margin-top: 30px;
+    position: relative;
+    background-color:
+    rgb(31, 31, 77);
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+
+}
+
+footer a{
+    color: red;
+}
+
+

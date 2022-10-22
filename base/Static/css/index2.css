@@ -1,0 +1,230 @@
+body{
+    font-family: "Montserrat",sans-serif;
+    overflow-x : hidden;
+}
+
+
+p{
+    width: 100%;
+}
+
+    .mi-azul2{
+        background-color:rgb(10, 118, 249);
+
+    }
+
+.BOTÓN {
+    display:inline-block;
+    padding:11px
+    
+}
+.COLOR{
+    background-color: rgb(90, 104, 207);
+}
+.mi-azul{
+    background-color: rgb(90, 104, 207);
+}
+.container1{
+
+    margin:6% 1px;
+    padding-top: 5px;
+   
+}
+
+.row{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+.menup{
+background-color: aqua;
+padding-bottom: 13px;
+padding-top: 50px;
+text-align: center;
+color:
+rgb(31, 31, 77);
+}
+
+.col1{
+height:1px ;
+display: flex;
+justify-content: flex-end
+}
+
+button{
+margin-right: 5px;
+background-color:
+rgb(31, 31, 77);
+position: relative;
+bottom: 55px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.col3{
+    padding-left: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+h4{
+
+    position: relative;
+    bottom: 54px;
+    background-color:aqua;
+    margin-left: 13rem;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family:fantasy;
+}
+
+h5{ 
+    position: relative;
+    bottom: 3.9rem;
+    background-color: rgb(31, 31, 77);
+    font-size: 25px;
+    border-radius: 15px;
+    margin-left: 22rem;
+    font-family:fantasy;
+    color: white;
+
+}
+
+.logo{
+    position: relative;
+    top: 1.5rem;
+}
+
+
+
+
+/*-------------------------------================================----------------------------*/
+/*-------------------------------===========    MENU    =========----------------------------*/
+/*-------------------------------================================----------------------------*/
+
+
+#menu li > a {
+    font: size 18px;
+    font-weight:bold;
+    color: #3f3f33
+}
+
+#menu form > button{
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+/*-------------------------------================================----------------------------*/
+/*-------------------------------============   SLIDER   ==========--------------------------*/
+/*-------------------------------================================----------------------------*/
+
+.carousel-inner{
+    max-height :35rem;
+}
+
+
+
+
+
+
+/*-------------------------------================================----------------------------*/
+/*-------------------------------===========    MAPA    =========----------------------------*/
+/*-------------------------------================================----------------------------*/
+
+
+.mapa{
+    background: url(mapa.png);
+    margin: 60px;
+    width: 120%;
+    height: 400px;
+}
+
+#local{
+    background:white;
+    padding-bottom :300px;
+    display:flex;
+    justify-content:center;
+}
+.wrapper{
+    width: 50%;
+    margin-left:100px;
+    padding-top: 150px;
+}
+
+
+/*-------------------------------================================----------------------------*/
+/*-------------------------------==========  UBICACION   =======-----------------------------*/
+/*-------------------------------================================-----------------------------*/
+
+#numeros-local div{
+    padding:0 20px 0 0;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+} 
+
+#numeros-local div:not(:first-child){
+    padding-left:20px;
+}
+
+#numeros-local p{
+    margin:0;
+}
+
+
+@media (max-width:768px){
+    #Intro, #Equipo {
+        width: 90% !important;
+    }
+
+    #equipo p{
+        display:none;
+
+    }
+.servicio-fila{
+    width: 100% !important;
+    text-align: center;
+}
+
+}
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap:wrap;
+    }
+}
+.wrapper{
+    width:90%;
+    margin:auto;
+    padding-top:50px;
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap:wrap;
+        justify-content:center !important;
+    }
+}
+
+footer{
+    position: relative;
+    background-color:
+    rgb(31, 31, 77);
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+
+}
+
+footer a{
+    color: red;
+}

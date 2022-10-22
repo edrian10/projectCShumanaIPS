@@ -1,0 +1,160 @@
+
+  body{
+    background-image: url(/img/senipetrobuscar3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+
+
+  .row{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+  }
+  
+  .menup{
+  background-color: aqua;
+  padding-bottom: 13px;
+  padding-top: 5px;
+  text-align: center;
+  color:
+  rgb(31, 31, 77);
+  }
+  
+  .col1{
+  height:1px ;
+  display: flex;
+  justify-content: flex-end
+  }
+  
+  button{
+    padding-bottom: 50px;
+    margin: 5px;
+    margin-right: 20px;
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    bottom: 39px;
+    }
+  
+
+.col3{
+    padding-left: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.principal{
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    right: 80px;
+    top: 20px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:50px ;
+    margin-right: 130px;
+    max-width: 490px;
+}
+
+a{
+    position: relative;
+    bottom: 20px;
+}
+
+.centro{
+    text-align: center;
+    margin: 9px;
+    margin-left: 10px;
+    padding-left: 100px;
+    margin-right:10px;
+    padding-right: 100px;
+    padding-top: 30px;
+    background-color:
+     aqua;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+footer{
+    padding-bottom: 85px;
+    height: 115px;
+    top: 68px;
+    margin-top: 26.5rem;
+    position: relative;
+    background-color:
+    rgb(31, 31, 77);
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+
+}
+
+footer a{
+    color: red;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+input{
+    outline:none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: #000;
+    border-radius:50px ;
+    font-size: 20px;
+    border: 1px solid rgb(20, 20, 20);
+    transition: all 1s ease;
+}
+
+::placeholder{
+    font-size: 25px;
+    
+    color: rgb(12, 1, 1);
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor:pointer;
+    transition: .60s;
+}
+
+.btn i {
+    font-size: 25px;
+    color: white;
+    line-height: 80px;
+    transition: all .60 ease;
+ }
+
+ .container1:hover input {
+    width: 350px;
+}
+
+
+.btn:hover {
+    background-color:red
+}
+

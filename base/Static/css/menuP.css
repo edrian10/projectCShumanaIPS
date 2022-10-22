@@ -1,0 +1,100 @@
+
+body{
+    background-image: url(/img/corazonMorado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  
+  .row{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+  }
+  
+  .menup{
+  background-color: aqua;
+  padding-bottom: 13px;
+  padding-top: 5px;
+  text-align: center;
+  color:
+  rgb(31, 31, 77);
+  }
+  
+  .col1{
+  height:1px ;
+  display: flex;
+  justify-content: flex-end
+  }
+  
+  button{
+    padding-bottom: 50px;
+    margin: 5px;
+    margin-right: 20px;
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    bottom: 39px;
+    }
+  
+
+.col3{
+    padding-left: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.principal{
+    background-color:
+    rgb(31, 31, 77);
+    position: relative;
+    right: 80px;
+    top: 20px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left:50px ;
+    margin-right: 130px;
+    max-width: 490px;
+}
+
+a{
+    position: relative;
+    bottom: 20px;
+}
+
+.centro{
+    text-align: center;
+    margin: 9px;
+    margin-left: 10px;
+    padding-left: 100px;
+    margin-right:10px;
+    padding-right: 100px;
+    padding-top: 30px;
+    background-color:
+     aqua;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+footer{
+    padding-bottom: 85px;
+    height: 115px;
+    top: 55px;
+    margin-top: 40px;
+    position: relative;
+    background-color:
+    rgb(31, 31, 77);
+}
+
+footer h3{
+    text-align: center;
+    color: bisque;
+
+}
+
+footer a{
+    color: red;
+}
