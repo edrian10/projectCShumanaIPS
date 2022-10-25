@@ -17,7 +17,7 @@ class EPS(models.model):
         Activo='1',_('Activo')
         Inactivo='0',_('Inactivo')
     estado=models.CharField(max_length=2, choices=Estado.choices, default=Estado.Activo, verbose_name="Estado")
-    class Barrio(models.model):
+class Barrio(models.model):
         barrio=models.CharField(_max_length=45, verbose_name="Nombres del Barrio")
         codigoBarrio=models.CharField(_max_length=45, verbose_name="Codigo del Barrio")
-        localidad=models.ForeignKey(barrio, on_delete=models.CASCADE, verbose_name="Localidad")
+        localidad=models.ForeignKey(Localidad, on_delete=models.CASCADE, verbose_name="Localidad")

@@ -1,6 +1,8 @@
 
 from django.db import models
 from django.forms import CharField
+
+from informes.models import Informe
 from.utils.translation import gettext_lazy as _
 
 #TABLA ESPECIALIDAD.
@@ -11,9 +13,10 @@ class Especialidad(models.model):
         Inactivo='0',_('Inactivo')
     estado=models.CharField(max_length=2, choices=Estado.choices, default=Estado.Activo, verbose_name="Estado")
 
+
 #TABLA MEDICO
-    class Medico(models.model):
-        codigoMedico=models.CharField(_max_length=45, verbose_name="Código de medico")
+class Medico(models.model):
+    codigoMedico=models.CharField(_max_length=45, verbose_name="Código de medico")
     class TipoDocumento(models.model):
         CC='CC', _('Cédula de Ciudadanía')
         TI='TI', _('Tarjeta de Identidad')
@@ -25,7 +28,7 @@ class Especialidad(models.model):
     numeroDocumento=models.CharField(max_length=50, verbose_name="Número de documento")
     nombres=models.CharField(_max_length=45, verbose_name="Nombres")
     apellidos=models.CharField(_max_length=45, verbose_name="Apellidos")
-    teléfono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
+    telefono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
     email=models.CharField(max_length=45, verbose_name="Email")
     cantServDia=models.CharField(_max_length=45, verbose_name="Cantidad de servicios al día")
     cantServMes=models.CharField(_max_length=45, verbose_name="Cantidad de servicios al Mes")
@@ -37,10 +40,10 @@ class Especialidad(models.model):
     Especialidad=models.ForeignKey(Especialidad, on_delete=models.CASCADE, verbose_name="Especialidad")
 
 #TABLA PACIENTES
-    class Pacientes(models.model):
-        nombres=models.CharField(_max_length=45, verbose_name="Nombres")
-        apellidos=models.CharField(_max_length=45, verbose_name="Apellidos")
-        edad=models.DateField(_max_length=45, verbose_name="Edad")
+class Pacientes(models.model):
+    nombres=models.CharField(_max_length=45, verbose_name="Nombres")
+    apellidos=models.CharField(_max_length=45, verbose_name="Apellidos")
+    edad=models.DateField(_max_length=45, verbose_name="Edad")
     class TipoDocumento(models.model):
         CC='CC', _('Cédula de Ciudadanía')
         TI='TI', _('Tarjeta de Identidad')
@@ -50,24 +53,24 @@ class Especialidad(models.model):
         OT='Otros',_('Otro Tipo de Identidad')
     tipoDocumento=models,CharField(max_length=6, choices=TipoDocumento.choices, default=TipoDocumento.CC, verbose_name="Tipo de Documento")
     numeroDocumento=models.CharField(max_length=50, verbose_name="Número de documento")
-class Genero(models.model):
-    F='F',_('Femenino')
-    M='M',_('Masculino')
-    OT='OTRO',_('Otro')
+    class Genero(models.model):
+        F='F',_('Femenino')
+        M='M',_('Masculino')
+        OT='OTRO',_('Otro')
     genero=models.CharField(max_length=4, choices=Genero.choices, default=Genero.OTROS, verbose_name="Genero")
     class GrupoSanguineo(models.model):
-        A+='A+', _('A+')
-        A-='A-', _('A-')
-        B+='B+', _('B+')
-        B-='B-', _('B-')
-        AB+='AB+', _('AB+')
-        AB-='AB+', _('AB-')
-        O+='O+', _('O+')
-        O-='O-',_('O-')
-    grupoSanguineo=models,CharField(max_length=10, choices=GrupoSanguineo.choices, default=GrupoSanguineo.CC, verbose_name="Grupo Sanguineo")
+        A_POSITIVO ='A+', _('A+')
+        A_NEGATIVO='A-', _('A-')
+        B_POSITIVO='B+', _('B+')
+        B_NEGATIVO='B-', _('B-')
+        AB_POSITIVO='AB+', _('AB+')
+        AB_NEGATIVO='AB+', _('AB-')
+        O_POSITIVO='O+', _('O+')
+        O_NEGATIVO='O-',_('O-')
+    grupoSanguineo=models,CharField(max_length=20, choices=GrupoSanguineo.choices, default=GrupoSanguineo.CC, verbose_name="Grupo Sanguineo")
     direccion=models.CharField(max_length=45, verbose_name="Dirección")
     email=models.CharField(max_length=45, verbose_name="Email")
-    teléfono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
+    telefono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
     class EstadoCivil(models.model):
         Casado ='Casado', _('Casado')
         Divorciado ='Divorciado', _('Divorciado')
@@ -85,8 +88,6 @@ class Genero(models.model):
         Activo='1',_('Activo')
         Inactivo='0',_('Inactivo')
     estado=models.CharField(max_length=2, choices=Estado.choices, default=Estado.Activo, verbose_name="Estado")
-
-
     EPS=models.ForeignKey(EPS, on_delete=models.CASCADE, verbose_name="Paciente")
     barrio=models.ForeignKey(Barrio, on_delete=models.CASCADE, verbose_name="Barrio")
     #Falta configurar las llaves foráneas de eps y barrio no se si van en este usuarios.
@@ -106,17 +107,12 @@ class Usuarios(models.model):
         OT='Otros',('Otro Tipo de Identidad')
     tipoDocumento=models,CharField(max_length=6, choices=TipoDocumento.choices, default=TipoDocumento.CC, verbose_name="Tipo de Documento")
     numeroDocumento=models.CharField(max_length=50, verbose_name="Número de documento")
-    teléfono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
+    telefono=models.CharField(max_length=20, verbose_name="Número de Teléfono")
     email=models.CharField(max_length=100, verbose_name="email")
-    class Genero(models.model):
-        F='F', _('Femenino')
-        M='M', _('Masculino')
-        OT='OTRO', _('Otro')
-    genero=models.CharField(max_length=4, choices=Genero.choices, default=Genero.OTROS, verbose_name="Genero")
     class TipoUsuario(models.model):
         Administrador ='Administrador', _('Administrador')
         Recepcionista='Recepcionista', _('Recepcionista')
-    tipoUsuario=models.CharField(max_length=4, choices=Genero.choices, default=Genero.OTROS, verbose_name="Tipo de Usuario")
+    tipoUsuario=models.CharField(max_length=4, choices=TipoUsuario.choices, default=TipoUsuario.OTROS, verbose_name="Tipo de Usuario")
     class Estado(models.model):
         Activo='1',_('Activo')
         Inactivo='0',_('Inactivo')
@@ -124,5 +120,5 @@ class Usuarios(models.model):
     pacientes=models.ForeignKey(Pacientes, on_delete=models.CASCADE, verbose_name="Paciente")
 
         #LA LLAVE FORÁNEA DE INFORMES PERTENECE A OTRO GRUPO NO SE DONDE DEBO HACER LA TABLA
-    informes=models.ForeignKey(Informes, on_delete=models.CASCADE, verbose_name="informes")
+    informes=models.ForeignKey(Informe, on_delete=models.CASCADE, verbose_name="informes")
 
