@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 
-def inicioAdmin(request):
+def inicio(request):
     context={}
-    return render(request,'index-admin.html', context)
+    return render(request,'index.html', context)
+    

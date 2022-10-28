@@ -18,7 +18,15 @@
 <body>
     {% include 'partials/header.html' %}
     {% include 'partials/navbar.html' %}
-    {% include 'partials/main.html' %}
+    
+    
+    {% block contenido %}
+        
+    {% endblock contenido %}
+        
+        
+    
+        
     {% include 'partials/footer.html' %}
     
     <link rel="stylesheet" href="/static/js/bootstrap.min.js">

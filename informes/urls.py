@@ -1,6 +1,6 @@
 from django.urls import path
-from informes.models import HistoriaClinica 
+from informes.views import historiaClinica 
 
 urlpatterns = [
-    path('',HistoriaClinica,name="historiaClinica"),
+    path('historia/',historiaClinica,name="historiaClinica"),
 ]
