@@ -1,6 +1,13 @@
 from django.urls import path
-from informes.views import historiaClinica 
+from informes.views import MenuP
+from informes.views import HistoriaClinica
+from informes.views import CrearH
+from informes.views import BuscarH
 
 urlpatterns = [
-    path('historia/',historiaClinica,name="historiaClinica"),
+    path('menuP/',MenuP,name="menuP"),
+    path('historiaClinica/',HistoriaClinica,name="historiaClinica"),
+    path('crearH/',CrearH,name="crearH"),
+    path('buscarH/',BuscarH,name="buscarH"),
+
 ]

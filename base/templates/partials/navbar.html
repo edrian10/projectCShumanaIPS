@@ -1,25 +1,16 @@
 {% load static %}
-{% comment %} <nav>
-  <div class="menup">
-    <div class="col1">
-      <a href="{% url 'login' %}" class="btn btn-primary"
-        ><h3 title="Iniciar Sesión">
-          <img
-            src="{% static 'img/inicio1.png' %}"
-            alt=""
-            width="84px"
-            height="36px"
-          /></h3
-      ></a>
-    </div>
-  </div>
-</nav> {% endcomment %}
 
-<nav>  
-    <div class="historiac"><h1 class="fs-2">{{titulo}}</h1></div>
-    <div class="col1 bg-blcentro">
-    <p title="Atrás"><a href="{% url 'login' %}"><button type="button" class="btn btn-primary">
-    <img src="{% static 'img/flechaMoradaReal.jpeg' %}" alt=""width="54px" height="35px">
-    </i></button></a></p>
+
+{% load static %}
+{% block blockname %}
+<nav>
+    <div class="menup"></div>
+    <div class="col1">
+    <a href="iniciarSesion.html"><h3 title="Iniciar Sesión"><button type="button"class="btn btn-primary">
+    <img src="{% static 'img/inicio1.png' %}" alt=""width="84px" height="36px">
+    </i></a></button></h3></a>
     </div>
-</nav>  
+</nav>
+{% endblock blockname %}
+
+

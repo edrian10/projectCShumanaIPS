@@ -1,10 +1,8 @@
-
 from django.db import models
 from django.forms import CharField
-
 from django.utils.translation import gettext_lazy as _
-
 from lugares.models import EPS, Barrio
+
 
 #TABLA ESPECIALIDAD.
 class Especialidad(models.Model):
@@ -114,4 +112,4 @@ class Usuarios(models.Model):
         Activo='1',_('Activo')
         Inactivo='0',_('Inactivo')
     estado=models.CharField(max_length=2, choices=Estado.choices, default=Estado.Activo, verbose_name="Estado")
-
+    

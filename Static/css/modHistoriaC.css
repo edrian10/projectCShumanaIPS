@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(/img/enfermera3.jpg);
+    background-image: url(static//img/enfermera3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -53,19 +53,6 @@ button{
     
 }
 
-.principal{
-    background-color:
-    rgb(31, 31, 77);
-    position: relative;
-    left: 40px;
-    top: 50px;
-    border-radius: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left:50px ;
-    margin-right: 130px;
-    max-width: 490px;
-}
 
 
 

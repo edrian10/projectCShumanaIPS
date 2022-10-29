@@ -22,5 +22,4 @@ urlpatterns = [
     path('',inicio,name='inicio'),
     path('informes/',include('informes.urls')),
     path('login/',login.as_view(),name="login")
-
 ]
