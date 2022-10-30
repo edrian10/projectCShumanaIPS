@@ -1,0 +1,108 @@
+{% extends 'partials/body3.html' %}
+{% load static %}
+
+{% block contenido %}
+<div class="container">
+    <div class="row">
+        <form  class="formulario1">
+            <div class="col-12">
+                <input type="date" values="2022-11-01"step="1">
+                <label for="inputAddress"class="form-label">Fecha de atención</label>
+            </div>
+            <div class="col-6">
+        <label for="inputIname"class="form-label">Nombres del paciente</label>
+        <input type="text" class="form-control" id="InputIname" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="inputSurname"class="form-label">Apellidos paciente</label>
+        <input type="text" class="form-control" id="inputSurname" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="selectInput"class="form-label">Tipo de Documento</label>
+        <select class="form-select" aria-label="selectInput">
+            <option selected>Seleccionar</option>
+            <option value="1">Cédula de Ciudadanía</option>
+            <option value="2">Tarjeta de Identidad</option>
+            <option value="3">Registro Civil</option>
+            <option value="4">Cédula de Extranjería</option>
+            <option value="5">Pasaporte</option>
+        </select>
+    </div>
+    <div class="col-6">
+        <label for="number"class="form-label">Número de documento</label>
+        <input type="number" class="form-control" id="numberInput" placeholder=""class="validate">
+    </div>
+    <div class="col-6">
+        <label for="numberInput">Número Celular</label>
+        <input type="number" class="form-control"class="validate">
+    </div>
+    <div class="col-6">
+        <label for="inputAddress"class="form-label">Dirección del paciente</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="countryInput"class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="countryInput" placeholder="Seleccionar">
+    </div>
+    <div class="col-6">
+        <label for="countryInput"class="form-label">Barrio</label>
+        <input type="text" class="form-control" id="countryInput" placeholder="Seleccionar">
+    </div>
+    <div class="col-6">
+        <label for="inputEmail"class="form-label">Correo Electrónico</label>
+        <input type="text" class="form-control" id="inputEmail" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="inputIname"class="form-label">Nombres del acompañante</label>
+        <input type="text" class="form-control" id="inputIname" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="surnameInput"class="form-label">Apellidos del acompañante</label>
+        <input type="text" class="form-control" id="surnameInput" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="numberInput">Celular Acompañante</label>
+        <input type="number" class="form-control"class="validate">
+    </div>
+    <div class="col-6">
+        <label for="inputPass"class="form-label">Motivo de la consulta</label>
+        <input type="password" class="form-control" id="InputPass" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="text"class="form-label">Causas Externas</label>
+        <input type="text" class="form-control" id="text" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="text"class="form-label">Cirugías recibidas</label>
+        <input type="text" class="form-control" id="text" placeholder="">
+    </div>
+    <div class="col-6 ">
+        <label for="inputText"class="form-label">Medicamentos que causan alergias</label>
+        <input type="text" class="form-control" id="text" placeholder="">
+    </div>
+    <div class="col-12">
+</div>
+    <div>
+        <label for="exampleFormControlTextarea1" class="form-label">Estado actual del paciente</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div>
+        <label for="exampleFormControlTextarea1" class="form-label">Comentarios del especialista</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    </div>
+</form>
+<div class="contenedor3">
+    <div class="row3">
+        <button type="button" class="btn btn-warning">Limpiar</button>
+        <button type="button" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-primary">Modificar</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="contenedor pt-1">
+</div>
+{% endblock contenido %}
+    
