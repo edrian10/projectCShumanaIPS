@@ -2,9 +2,6 @@ from multiprocessing import context
 from django.shortcuts import render
 
 # Create your views here.
-def MenuP(request):
-    context={}
-    return render(request,'informes/menuP.html')
 
 def HistoriaClinica(request):
     context={}
@@ -25,3 +22,7 @@ def ModificarH(request):
 def ListarHc(request):
     context={}
     return render(request,'informes/listarHc.html')
+
+def MenuP(request):
+    context={}
+    return render(request,'informes/menuP.html')
