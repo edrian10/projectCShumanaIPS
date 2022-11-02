@@ -5,13 +5,16 @@
         body{
         background-image: url("{% static 'img/corazonMorado.jpg' %}");
         }
-        a{text-decoration: none;
-        color: black;}
     </style>
         <div class="row1 pt-1 pb-1">
             <div class="col3">
                 
-                <div class="principal"class="text-center">
+                <div class="principal"><style>
+                    .principal {
+                    position:relative;
+                    right:43rem;
+                    }
+                </style>
                     <div class="centro"><a href="{% url 'historiaClinica' %}"><p class="L">Historia Clínica</p></a></div>
                     <div class="centro "><a href=""><p class="L">Usuarios</p></a></div>
                     <div class="centro "><a href=""><p class="L">Informes</p></a></div>
@@ -21,7 +24,7 @@
                         .L {
                         position:relative;
                         bottom:15px;
-                        font-size:20px;
+                        font-size:16px;
                         }
                     </style>
                 

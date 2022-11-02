@@ -8,9 +8,14 @@
 a{text-decoration: none;
 color: black;}
 </style>
-    <div class="row1 pt-1 pb-1">
-        <div class="col3 pt-1 pb-1">
-            <div class="principal fs-5">
+    <div class="row1 pt-1 pb-4 mb-3 mt-2">
+        <div class="col3">
+            <div class="principal"><style>
+                .principal{
+                position:relative;
+                right:44rem
+                }
+            </style>
                 <div class="centro"><a href="{% url 'crearH'%}"><p class="A">Crear</p></a></div>
                 <div class="centro "><a href="{% url 'buscarH'%}"><p class="A">Buscar</p></a></div>
                 <div class="centro"><a href="{% url 'listarHc'%}"><p class="A">Listar</p></a></div>
