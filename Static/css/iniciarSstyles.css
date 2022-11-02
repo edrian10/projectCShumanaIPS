@@ -1,5 +1,5 @@
 body{
-  background-image: url(static/img/buscar1.jpg);
+  background-image: url(/img/buscar1.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -40,7 +40,11 @@ bottom: 60px;
 
 
 footer{
-  margin-top: 44px;
+  padding-bottom: 93px;
+  height: 90px;
+  top: 65px;
+  margin-top: 42px;
+  margin-bottom: 15px;
   position: relative;
   background-color:
   rgb(31, 31, 77);

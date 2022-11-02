@@ -1,7 +1,13 @@
-{% extends 'partials/body.html' %}
+{% extends 'partials/body1.html' %}
 {% load static %}
 {% block contenido %}
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<section class="Barra"><style>
+  .Barra {
+      position: relative;
+      bottom:2rem;
+  }
+</style>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="{% static 'img/slider1.png' %}" class=" w-100">
@@ -21,35 +27,36 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
+  </section>
   </div>
-    <section class="w-75 mx-auto" id="Intro">
-      <h1 class="text-primary pt-3" >Te cuidamos <span>te curamos.</span></h1>
-      <p class="p-1 fs-4 "><span>Salud a tu alcance sin esperar mas.
-      </span>En Cuidarte Salud Humana</span> entendemos la importancia de tu tiempo, ofrecemos servicios profesionales y confíables. Atención las 24 horas a todos nuestros pacientes con servicios personalizados sin importar, el horario ni el día
+  <section class="w-75 mx-auto" id="Intro">
+    <h1 class="text-primary pt-3" >Te cuidamos <span>te curamos.</span></h1>
+    <p class="p-1 fs-4 "><span>Salud a tu alcance sin esperar mas.
+    </span>En Cuidarte Salud Humana</span> entendemos la importancia de tu tiempo, ofrecemos servicios profesionales y confíables. Atención las 24 horas a todos nuestros pacientes con servicios personalizados sin importar, el horario ni el día
     Empresa fundada y dirigida por el médico y dermatólogo Nestor Ovalle; Enfocada en el área de belleza, ofrece a sus clientes servicios de medicina general y atenciones especializadas de la piel, con productos para su cuidado, e intervenciones ambulatorias. Ha decido dar un paso adelante en su proceso de evolución y competitividad en su medio agregando a sus herramientas un programa que automatice la información necesaria para conocer a sus pacientes y saber con precisión los asuntos y las necesidades a resolver a de cada uno, Dando una enorme ventaja en la celeridad de las consultas médicas.
-Garantizando un servicio nuevo y eficaz capaz de velar por la protección de datos. Acompañado de la gran experiencia y su vasto conocimiento en el campo de salud mencionado. Se pretende dar más comodidad y confianza a todos sus clientes, de cara a los nuevos retos.
-.</p>
-    </section>
-      <section class="container-fluid">
-        <div class="row w-75 mx-auto  servicio-fila">
-          <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
-            <img class="rounded-3" src="{% static '/img/iconosPortada1.jpg' %}" alt="Profesionales"width="180" height=160">
-              <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">Profesionales</h3>
-                <p class="px-4">Ponemos a tu servicio los mejores especialistas.</p>
-                </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
-                <img class="rounded-3" src="{% static '/img/iconosPortada4.jpg' %}" alt="Cirugías"width="180" height=160">
-                <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">Cirugías</h3>
-                <p class="px-4">recibe atención inmediata para cirugías ambulatorias y estéticas, contamos con profesionales dermatologos</p>
-                </div>
-                </div>
-                </div>
-                <div class="row w-75 mx-auto  servicio-fila">
-                <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
-                <img class="rounded-3" src="{% static '/img/iconosPortada2.jpg' %}" alt="Profesionales"width="360" height=160">
+    Garantizando un servicio nuevo y eficaz capaz de velar por la protección de datos. Acompañado de la gran experiencia y su vasto conocimiento en el campo de salud mencionado. Se pretende dar más comodidad y confianza a todos sus clientes, de cara a los nuevos retos.
+    .</p>
+  </section>
+  <section class="container-fluid">
+    <div class="row w-75 mx-auto  servicio-fila">
+      <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
+        <img class="rounded-3" src="{% static '/img/iconosPortada1.jpg' %}" alt="Profesionales"width="180" height=160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Profesionales</h3>
+          <p class="px-4">Ponemos a tu servicio los mejores especialistas.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
+        <img class="rounded-3" src="{% static '/img/iconosPortada4.jpg' %}" alt="Cirugías"width="180" height=160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Cirugías</h3>
+          <p class="px-4">recibe atención inmediata para cirugías ambulatorias y estéticas, contamos con profesionales dermatologos</p>
+        </div>
+      </div>
+    </div>
+    <div class="row w-75 mx-auto  servicio-fila">
+      <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-start my-5 icono-wrap">
+        <img class="rounded-3" src="{% static '/img/iconosPortada2.jpg' %}" alt="Profesionales"width="360" height=160">
                 <div>
                 <h3 class="fs-5 mt-4 px-4 pb-1">Medicina general</h3>
                 <p class="px-4">Detectamos tu estado de salud, cuidamos tu corazón y mucho más.</p>

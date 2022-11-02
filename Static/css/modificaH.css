@@ -1,64 +1,75 @@
 
+
+
 body{
-    background-image: url(/img/enfermera3.jpg);
+    background-image: url(/img/doctorderecha.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:fixed;
+}
+.container{
+    margin-left: 35rem;
+}
+
+
+.formulario1{
+    max-width: 45rem;
+    padding: 1.3rem;
+    margin-top: 50px;
+    background-color: rgba(177, 204, 209, 0.3);
+    font-weight: bold;
+    border-radius: 2rem;
+    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
 }
 
 
 .row{
-    background-color:
-     white;
     padding-top: 3px;
     padding-bottom: 4px;
     padding-left: 10px;
 }
 
-.historiac{
-    background-color: aqua;
-    padding-bottom: 13px;
-    padding-top: 5px;
-    text-align: center;
-    color:
-     rgb(31, 31, 77);
+.menup{
+background-color: aqua;
+padding-bottom: 13px;
+padding-top: 5px;
+text-align: center;
+color:
+rgb(31, 31, 77);
 }
 
 .col1{
-    height:1px ;
-    display: flex;
-    justify-content: flex-end
+height:1px ;
+display: flex;
+justify-content: flex-end
 }
 
 button{
-    margin: 5px;
-    margin-right: 20px;
-    background-color:
-     rgb(31, 31, 77);
+margin: 5px;
+margin-right: 20px;
+background-color:
+rgb(31, 31, 77);
+position: relative;
+bottom: 59px;
+}
+
+.mod{
+    margin-left:25rem ;
     position: relative;
-    bottom: 40px;
+    top: 0.89rem;
 }
-
-.col3{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-}
-
-.principal{
-   
-    color:
-    rgb(31, 31, 77);
-    font-weight:bolder
-    
-}
+.contenedor3{
+    margin-top: 4rem;
+   display: flex;
+   margin-left: 12rem;
+  }
 
 .principal{
     background-color:
     rgb(31, 31, 77);
     position: relative;
-    left: 40px;
-    top: 50px;
+    right: 80px;
+    top: 20px;
     border-radius: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -68,11 +79,6 @@ button{
 }
 
 
-
-a{
-    position: relative;
-    bottom: 20px;
-}
 
 .centro{
     text-align: center;
@@ -85,13 +91,16 @@ a{
     background-color:
      aqua;
     border-radius: 15px;
+    font-weight: bold;
 }
+
+
 
 footer{
     padding-bottom: 85px;
     height: 115px;
-    top: 88px;
-    margin-top: 94px;
+    top: 38px;
+    margin-top: 30px;
     position: relative;
     background-color:
     rgb(31, 31, 77);

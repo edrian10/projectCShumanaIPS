@@ -15,8 +15,8 @@ body{
   
   .menup{
   background-color: aqua;
-  padding-bottom: 103px;
-  padding-top: 100px;
+  padding-bottom: 13px;
+  padding-top: 5px;
   text-align: center;
   color:
   rgb(31, 31, 77);
@@ -82,7 +82,7 @@ a{
 footer{
     padding-bottom: 85px;
     height: 115px;
-    top: 55px;
+    top: 85px;
     margin-top: 40px;
     position: relative;
     background-color:

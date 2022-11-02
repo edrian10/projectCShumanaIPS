@@ -138,11 +138,10 @@ h5{
 
 
 .mapa{
-    background: url(/Static/css/mapaRecortado2.png);
+    background: url(mapa.png);
     margin: 60px;
     width: 120%;
     height: 400px;
-    
 }
 
 #local{

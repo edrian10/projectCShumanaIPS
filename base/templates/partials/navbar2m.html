@@ -1,0 +1,39 @@
+{% load static %}
+ {% block contenido %}
+ <section class="Barra">
+    <style>
+    .Barra {
+        position: relative;
+        bottom:2rem;
+    }
+</style>
+ <nav>
+    <div class="bg-info"style=height:60px>
+        <h1 class="letra">Iniciar Sesión</h1><style>
+            .letra{
+                position: relative;
+                top:0.75rem;
+                left:38rem
+            }
+          </style>
+    </div>
+    <div class="col1"><p class="mx-2">
+        <a href="{% url 'inicio'%}"><h3 title="Regresar"class="me-1 mb-5"><button type="button"class="btn btn-primary">
+            <img src="{% static 'img/flechaSalir.png' %}" alt="Regresar"width="54px" height="25px">
+            </i></button></p></a>
+            <style>
+                .col1 {
+                    position: relative;
+                    bottom:1rem;
+                    left:10px;
+                }
+            </style>
+        </button>
+        </p>
+    </div>
+</nav>
+</section>
+{% endblock contenido %} 
+
+
+

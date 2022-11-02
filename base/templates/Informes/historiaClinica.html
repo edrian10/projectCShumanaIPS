@@ -1,17 +1,26 @@
-{% extends 'partials/body3.html' %}
+{% extends 'partials/body2.html' %}
 {% load static %}
 {% block contenido %}
-<div class="container px-5 pb-2 pt-4">
+<div class="container px-5 pb-2 pt-4"><style type="text/css">
+    body{
+        background-image: url("{% static 'img/enfermera3.jpg' %}");
+    }
+a{text-decoration: none;
+color: black;}
+</style>
     <div class="row1 pt-1 pb-1">
         <div class="col3 pt-1 pb-1">
             <div class="principal fs-5">
-                <div class="centro"><a href="crearHc.html">Crear</a></div>
-                <div class="centro "><a href="buscarh.html">Buscar</a></div>
-                <div class="centro"><a href="listarHistoria.html">Listar</a></div>
-                <div class="centro"><a href="">Modificar</a></div>
-                <style type="text/css">
-                a{text-decoration: none;
-                color: black;}
+                <div class="centro"><a href="{% url 'crearH'%}"><p class="A">Crear</p></a></div>
+                <div class="centro "><a href="{% url 'buscarH'%}"><p class="A">Buscar</p></a></div>
+                <div class="centro"><a href="{% url 'listarHc'%}"><p class="A">Listar</p></a></div>
+                <div class="centro"><a href="{% url 'modificarH'%}"><p class="A">Modificar</p></a></div>
+                <style>
+                    .A {
+                    position:relative;
+                    bottom:15px;
+                    font-size:20px;
+                    }
                 </style>
             </div>
         </div>

@@ -1,4 +1,4 @@
-{% extends 'partials/body.html' %}
+{% extends 'partials/body2.html' %}
 {% load static %}
 {% block contenido %}
 <div class="container1">
@@ -6,9 +6,17 @@
         <div class="btn">
         <i class="fa fa-search"></i>
         <div class="row6">
-    <p><img src="{% static 'img/buscardocu.ico' %}" alt=""></p>
+    <p><img src="img/buscardocu.ico" alt=""></p>
 </div>
     </div>
 </div>
+
+<style type="text/css">
+    body{
+    background-image: url("{% static 'img/enfermera3.jpg' %}");
+    }
+a{text-decoration: none;
+color: black;}
+</style>
+
 {% endblock contenido %}
-    

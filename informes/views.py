@@ -4,7 +4,10 @@ from django.shortcuts import render
 # Create your views here.
 
 def HistoriaClinica(request):
-    context={}
+    titulo="Historia Clinica"
+    context={
+    'titulo':titulo
+    }
     return render(request,'informes/historiaClinica.html')
 
 def CrearH(request):
