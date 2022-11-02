@@ -2,117 +2,164 @@
 {% load static %}
 
 {% block contenido %}
-<div class="container" class="col-sm-6 col-md-6 col-lg-6">
-    <table id="myTable" class="table table-striped table-bordered mt-4 align-items-center .align-middle">
-  <thead>
-<tr class="table-primary text-center align-middle">
-<th scope="col">Documento Identidad</th>
-<th scope="col">Nombres</th>
-<th scope="col">Apellidos</th>
-<th scope="col">No. Historia Clínica</th>
-<th scope="col">Profesional asignado</th>
-<th scope="col">Acciones</th>
-</tr>
-</thead>
-<tbody>
-    <tr>
-<th>11111111</th>
-<th>Edrian Alberto</th>   
-<th>Estrada</th>
-<th>1111111111-11</th>
-<th>Dra. Lina María Oliveros</th>  
-<th>
-    
-    <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-    <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-    <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-    </th>    
-        </tr>
-<tr>
-    <th>44444444444</th>
-    <th>Carlos Julio</th>   
-    <th>Cárcamo</th>
-    <th>44444444444444-44</th>
-    <th>Dr. Pedro Castellanos</th>  
-    <th>
-        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-    </th>    
-</tr>
-<tr>
-    <th>88888888888</th>
-    <th>Edrian Alberto</th>   
-    <th>Estrada</th>
-    <th>88888888888-88</th>
-    <th>Dr. Humberto Jiménez</th>  
-    <th>
-        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-    </th>
-</tr>
-    <th>88888888888</th>
-    <th>Edrian Alberto</th>   
-    <th>Estrada</th>
-    <th>88888888888-88</th>
-    <th>Dr. Humberto Jiménez</th>  
-    <th>
-        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-    </th>                         
-</tr>
-<tr>
-    <th>11111111</th>
-    <th>Edrian Alberto</th>   
-    <th>Estrada</th>
-    <th>1111111111-11</th>
-    <th>Dra. Lina María Oliveros</th>  
-    <th>
-        
-        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-            </th>
+<section class="Vod"><style>
+    .Vod{
+    position:relative;
+    right:39rem;
+    }
+</style>
+    <div class="container">
+        <table id="myTable" class="table table-striped table-bordered mt-4 align-items-center .align-middle">
+            <thead>
+                <tr class="table-primary text-center align-middle">
+                    <th scope="col">Documento Identidad</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">No. Historia Clínica</th>
+                    <th scope="col">Profesional asignado</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>11111111</th>
+                    <th>Edrian Alberto</th>   
+                    <th>Estrada</th>
+                    <th>1111111111-11</th>
+                    <th>Dra. Lina María Oliveros</th>  
+                    <th class="mover"><style>
+                        .mover{
+                        position:relative;
+                        top:2rem;
+                        left:1rem;
+                        }
+                    </style>
+                        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                    </th>    
+                </tr>
+                <tr>
+                    <th>44444444444</th>
+                    <th>Carlos Julio</th>   
+                    <th>Cárcamo</th>
+                    <th>44444444444444-44</th>
+                    <th>Dr. Pedro Castellanos</th>  
+                    <th class="mover"><style>
+                        .mover{
+                        position:relative;
+                        top:2rem;
+                        }
+                    </style>
+                        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                    </th>    
+                </tr>
+                <tr>
+                    <th>88888888888</th>
+                    <th>Edrian Alberto</th>   
+                    <th>Estrada</th>
+                    <th>88888888888-88</th>
+                    <th>Dr. Humberto Jiménez</th>  
+                    <th class="mover"><style>
+                        .mover{
+                        position:relative;
+                        top:2rem;
+                        }
+                    </style>
+                        <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                        <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                        <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                    </th>
+                </tr>
+                <th>88888888888</th>
+                <th>Edrian Alberto</th>   
+                <th>Estrada</th>
+                <th>88888888888-88</th>
+                <th>Dr. Humberto Jiménez</th>  
+                <th class="mover"><style>
+                    .mover{
+                    position:relative;
+                    top:2rem;
+                    }
+                </style>
+                    <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                    <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                    <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                </th>                         
             </tr>
-    <tr>
-        <th>44444444444</th>
-        <th>Carlos Julio</th>   
-        <th>Cárcamo</th>
-        <th>44444444444444-44</th>
-        <th>Dr. Pedro Castellanos</th>  
-        <th>
-            <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-            <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-            <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-        </th>    
-    </tr>
-    <tr>
-        <th>88888888888</th>
-        <th>Edrian Alberto</th>   
-        <th>Estrada</th>
-        <th>88888888888-88</th>
-        <th>Dr. Humberto Jiménez</th>  
-        <th>
-            <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-            <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-            <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
-        </th>
-    </tr>
-        <th>88888888888</th>
-        <th>Edrian Alberto</th>   
-        <th>Estrada</th>
-        <th>88888888888-88</th>
-        <th>Dr. Humberto Jiménez</th>  
-        <th>
-            <button type="button" class="btn btn-primary btn-sm" >Editar</button>
-            <button type="button" class="btn btn-success btn-sm" >Buscar</button>
-            <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+            <tr>
+                <th>11111111</th>
+                <th>Edrian Alberto</th>   
+                <th>Estrada Amariles</th>
+                <th>1111111111-11</th>
+                <th>Dra. Lina María Oliveros</th>  
+                <th class="mover"><style>
+                    .mover{
+                    position:relative;
+                    top:2rem;
+                    }
+                </style>
+                    
+                    <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                    <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                    <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                </th>
+            </tr>
+            <tr>
+                <th>44444444444</th>
+                <th>Carlos Julio</th>   
+                <th>Cárcamo</th>
+                <th>44444444444444-44</th>
+                <th>Dr. Pedro Castellanos</th>  
+                <th class="mover"><style>
+                    .mover{
+                    position:relative;
+                    top:2rem;
+                    }
+                </style>
+                    <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                    <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                    <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                </th>    
+            </tr>
+            <tr>
+                <th>88888888888</th>
+                <th>Edrian Alberto</th>   
+                <th>Estrada</th>
+                <th>88888888888-88</th>
+                <th>Dr. Humberto Jiménez</th>  
+                <th class="mover"><style>
+                    .mover{
+                    position:relative;
+                    top:2rem;
+                    }
+                </style>
+                    <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                    <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                    <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
+                </th>
+            </tr>
+            <th>88888888888</th>
+            <th>Edrian Alberto</th>   
+            <th>Estrada</th>
+            <th>88888888888-88</th>
+            <th>Dr. Humberto Jiménez</th>  
+            <th class="mover"><style>
+                .mover{
+                position:relative;
+                top:2rem;
+                }
+            </style>
+                <button type="button" class="btn btn-primary btn-sm" >Editar</button>
+                <button type="button" class="btn btn-success btn-sm" >Buscar</button>
+                <button type="button" class="btn btn-danger btn-sm" >Desactivar</button>
             </th>                         
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        </tr>
+    </tbody>
+</table>
+</div>
+</section>
 {% endblock contenido %}
     
