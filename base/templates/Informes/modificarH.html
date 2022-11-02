@@ -3,8 +3,30 @@
 
 {% block contenido %}
 <div class="container">
+    <style>
+        body {
+        background-image: url("{% static 'img/doctorDerecha.jpg' %}");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        }
+      </style>
     <div class="row">
-        <form  class="formulario1">
+        <form  class="formulario1"><style>
+            .container{
+                margin-left: 670px;
+            }
+            .formulario1{
+                max-width: 45rem;
+                padding: 1.3rem;
+                margin-top: 50px;
+                background-color: rgba(9, 9, 9, 0.455);
+                font-weight: bold;
+                border-radius: 2rem;
+                box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+            }
+            
+        </style>
             <div class="col-12">
                 <input type="date" values="2022-11-01"step="1">
                 <label for="inputAddress"class="form-label">Fecha de atención</label>
@@ -101,8 +123,6 @@
 </div>
 </div>
 </div>
-</div>
-<div class="contenedor pt-1">
 </div>
 {% endblock contenido %}
     
