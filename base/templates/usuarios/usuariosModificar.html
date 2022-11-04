@@ -1,0 +1,102 @@
+{% extends 'partials/body2.html' %} 
+{% load static %} 
+{% block contenido %}
+<div class="container">
+    <style>
+        body {
+        background-image: url(img/doctorderech.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        }
+      </style>
+    <div class="row">
+        <form  class="formulario1"><styl>
+            .container{
+                margin-left: 670px;
+            }
+            .formulario1{
+                max-width: 45rem;
+                padding: 1.3rem;
+                margin-top: 50px;
+                background-color: rgba(9, 9, 9, 0.455);
+                font-weight: bold;
+                border-radius: 2rem;
+                box-shadow: inset 1px 1px 22px 4px rgba(33, 32, 32, 0.85);
+            }
+        </style>
+            <div class="col-12">
+                <input type="date" values="2022-11-01"step="1">
+                <label for="inputAddress"class="form-label">Fecha de Modificación</label>
+            </div>
+            <div class="col-6">
+        <label for="inputIname"class="form-label">Nombres del Usuario</label>
+        <input type="text" class="form-control" id="InputIname" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="inputSurname"class="form-label">Apellidos del Usuario</label>
+        <input type="text" class="form-control" id="inputSurname" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="selectInput"class="form-label">Tipo de Documento</label>
+        <select class="form-select" aria-label="selectInput">
+            <option selected>Seleccionar</option>
+            <option value="1">Cédula de Ciudadanía</option>
+            <option value="2">Tarjeta de Identidad</option>
+            <option value="3">Registro Civil</option>
+            <option value="4">Cédula de Extranjería</option>
+            <option value="5">Pasaporte</option>
+        </select>
+    </div>
+    <div class="col-6">
+        <label for="number"class="form-label">Número de documento</label>
+        <input type="number" class="form-control" id="numberInput" placeholder=""class="validate">
+    </div>
+    <div class="col-6">
+        <label for="numberInput">Número Celular</label>
+        <input type="number" class="form-control"class="validate">
+    </div>
+    <div class="col-6">
+        <label for="inputAddress"class="form-label">Dirección del Usuario</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="countryInput"class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="countryInput" placeholder="Seleccionar">
+    </div>
+    <div class="col-6">
+        <label for="countryInput"class="form-label">Barrio</label>
+        <input type="text" class="form-control" id="countryInput" placeholder="Seleccionar">
+    </div>
+    <div class="col-6">
+        <label for="inputEmail"class="form-label">Correo Electrónico</label>
+        <input type="text" class="form-control" id="inputEmail" placeholder="">
+    </div>
+    <div class="col-6">
+        <label for="selectInput"class="form-label">Estado del Usuario</label>
+        <select class="form-select" aria-label="selectInput">
+            <option selected>Seleccionar</option>
+            <option value="1">Activo</option>
+            <option value="2">Inactivo</option>
+        </select>
+    </div>
+    <div class="col-12">
+</div>
+    </div>
+</form>
+<div class="contenedor3">
+    <div class="row3"><style>
+        .row3{
+            position: relative;
+            top: 2.5em;
+            left: 28rem;
+        }
+    </style>
+        <button type="button" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-primary">Modificar</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock contenido %}
