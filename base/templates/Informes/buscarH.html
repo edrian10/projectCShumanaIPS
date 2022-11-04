@@ -4,21 +4,29 @@
 <div class="black"><style>
     .black{
         padding-bottom:2.5rem;
-    
     }
 </style>
-    <div class="container1">
-        <input type="text fs-1" placeholder=" Número de documento">
+<div class="container1"><style>
+    .container1{
+        margin-bottom:3rem;
+        padding-left: 40px;
+        padding-right: 30px
+    }
+  </style>
+    <input type="text" placeholder="Número de documento">
         <div class="btn">
-            <i class="fa fa-search"></i>
-            <div class="row6">
-                <p><img src="{% static 'img/buscardocu.ico' %}" alt=""></p>
-            </div>
-        </div>
+        <i class="fa fa-search"></i>
+        <div class="row6">
+    <p><img src="{% static 'img/buscardocu.ico' %}" alt="buscar"></p>
+</div>
     </div>
-</div><style>
-    body{
-        background-image: url("{% static 'img/senipetrobuscar3.jpg' %}");
+</div>
+<style>
+    body {
+    background-image: url("{% static 'img/doctorizq.jpg' %}");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
     }
-</style>
+  </style>
 {% endblock contenido %}

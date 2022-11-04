@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'informes',
     'lugares',
     'usuarios',
-    
+    'menuPrincipal',
 ]
 
 MIDDLEWARE = [

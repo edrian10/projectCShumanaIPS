@@ -26,6 +26,3 @@ def ListarHc(request):
     context={}
     return render(request,'informes/listarHc.html')
 
-def MenuP(request):
-    context={}
-    return render(request,'informes/menuP.html')
