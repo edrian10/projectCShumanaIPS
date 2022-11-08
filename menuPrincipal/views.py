@@ -3,6 +3,15 @@ from django.shortcuts import render
 
 
 # Create your views here.
-def menuP(request):
-    context={}
+def MenuPrincipal(request):
+    titulo="Menu Principal"
+    context={
+    'titulo':titulo
+    }
     return render(request,'menuPrincipal/menuP.html')
+
+
+
+
+
+

@@ -1,6 +1,5 @@
 from django.db import models
-
-from usuarios.models import Medico, Pacientes
+from usuarios2.models import Medico, Pacientes
 
 # Create your models here
 # TABLA DE HISTORIA CLÍNICA.

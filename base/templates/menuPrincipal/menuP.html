@@ -1,36 +1,40 @@
 {% extends 'partials/body2.html' %}
 {% load static %}
-    {% block contenido %}
-    <div class="container px-5 pb-2 pt-4"><style>
-        body{
-        background-image: url("{% static 'img/corazonMorado.jpg' %}");
+{% block contenido %}
+<div class="container px-5 pb-2 pt-4"><style>
+    body {
+    background-image: url("{% static 'img/doctorDerecha.jpg' %}");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    }
+  </style>
+  
+    <div class="row1"><style>
+        .row1{
+        position:relative;
+        right:40rem
         }
     </style>
-        <div class="row1 pt-1 pb-1">
-            <div class="col3">
-                
-                <div class="principal"><style>
-                    .principal {
+        <div class="col3">
+            <div class="principal">
+                <div class="centro"><a href="{% url 'historiaClinica' %}"><p class="A">Historia Clinica</p></a></div>
+                <div class="centro "><a href="{% url 'usuarios' %}"><p class="A">Usuarios</p></a></div>
+                <div class="centro "><a href="·"><p class="A">Informes</p></a></div>
+                <div class="centro"><a href="#"><p class="A">Pacientes</p></a></div>
+                <div class="centro"><a href="#"><p class="A">Medicos</p></a></div> <style>
+                    .A {
                     position:relative;
-                    right:43rem;
+                    bottom:15px;
+                    font-size:20px;
                     }
                 </style>
-                    <div class="centro"><a href="{% url 'historiaClinica' %}"><p class="L">Historia Clínica</p></a></div>
-                    <div class="centro "><a href="{% url 'usuarios' %}"><p class="L">Usuarios</p></a></div>
-                    <div class="centro "><a href=""><p class="L">Informes</p></a></div>
-                    <div class="centro"><a href=""><p class="L">Pacientes</p></a></div>
-                    <div class="centro"><a href=""><p class="L">Médicos</p></a></div>
-                    <style>
-                        .L {
-                        position:relative;
-                        bottom:15px;
-                        font-size:16px;
-                        color:black;
-                        }
-                    </style>
-                
-            </div>
+                <style type="text/css">
+                a{text-decoration: none;
+                color: black;}
+            </style>
         </div>
     </div>
-    </div>
-    {% endblock contenido %}
+</div>
+</div>
+{% endblock contenido %}

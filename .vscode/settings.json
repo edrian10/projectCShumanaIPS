@@ -77,5 +77,8 @@
         "Todos",
         "ventaja",
         "Ytratamientos"
+    ],
+    "python.analysis.extraPaths": [
+        "./menuPrincipal"
     ]
 }

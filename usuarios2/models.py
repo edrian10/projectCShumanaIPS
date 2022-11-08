@@ -86,7 +86,7 @@ class Pacientes(models.Model):
         Activo='1',_('Activo')
         Inactivo='0',_('Inactivo')
     estado=models.CharField(max_length=2, choices=Estado.choices, default=Estado.Activo, verbose_name="Estado")
-    eps=models.ForeignKey(EPS, on_delete=models.CASCADE, verbose_name="Paciente")
+    eps=models.ForeignKey(EPS, on_delete=models.CASCADE, verbose_name="EPS")
     barrio=models.ForeignKey(Barrio, on_delete=models.CASCADE, verbose_name="Barrio")
 
 #TABLA USUARIOS
