@@ -18,7 +18,7 @@ from django.urls import path, include
 from base.views import inicio
 from django.contrib.auth.views import LoginView as login
 
-from usuarios.views import Usuarios
+
 
 
 
@@ -30,5 +30,4 @@ urlpatterns = [
     path('informes/',include('informes.urls')),
     path('menuPrincipal/',include('menuPrincipal.urls')),
     path('usuarios/',include ('usuarios.urls')),
-    
 ]
