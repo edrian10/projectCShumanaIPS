@@ -18,7 +18,7 @@ from django.urls import path, include
 from base.views import inicio
 from django.contrib.auth.views import LoginView as login
 
-from usuarios.views import Crear, Usuarios
+from usuarios.views import Usuarios
 
 
 
@@ -29,6 +29,6 @@ urlpatterns = [
     path('login/',login.as_view(),name="login"),
     path('informes/',include('informes.urls')),
     path('menuPrincipal/',include('menuPrincipal.urls')),
-    path('usuarios/',Usuarios,name='usuarios'),
-    path('crear',Crear,name='crear'),
+    path('usuarios/',include ('usuarios.urls')),
+    
 ]

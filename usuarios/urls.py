@@ -1,9 +1,14 @@
 from django.urls import path
-from menuPrincipal.views import Usuarios
-from usuarios.views import Crear
+
+
+from usuarios.views import Buscar, CrearUs, Listar, Modificar, Pacientes,Usuarios
 
 urlpatterns = [
-    path('usuarios',Usuarios,name="usuarios"),
-    path('crear',Crear,name="crear"),
+    path('',Usuarios,name="usuarios"),
+    path('crearUs/',CrearUs,name="crearUs"),
+    path('buscar/',Buscar,name="buscar"),
+    path('listar/',Listar,name="listar"),
+    path('modificar/',Modificar,name="modificar"),
+    path('crearUs/',CrearUs,name="crearUs"),
+    path('pacientes/',Pacientes,name="pacientes"),
 ]
-
