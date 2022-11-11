@@ -1,14 +1,42 @@
 {% extends 'partials/body2.html' %} 
 {% load static %} 
 {% block contenido %}
-<div class="container">
-    <div class="row1 pt-1 pb-1">
-        <div class="col3 pt-1 pb-1">
-            <div class="principal fs-5">
-                <div class="centro"><a href="{% url 'm-crear'%}">Medico Nuevo</a></div>
-                <div class="centro "><a href="">Buscar Medicos</a></div>
-                <div class="centro"><a href="{% url 'm-listar'%}">Listar Medicos</a></div>
-                <div class="centro"><a href="{% url 'm-modificar'%}">Modificar Medicos</a></div>
+<a href="{% url 'menuP'%}"><button type="button" class="btn btn-primary">Atras</button></a>
+<div class="container"><style>
+    .container {
+    position: relative;
+    right: 40rem;
+    
+    }
+    </style>
+    <style type="text/css">
+        body{
+            background-image: url("{% static 'img/enfermera3.jpg' %}");
+        }
+    a{text-decoration: none;
+    color: black;}
+    </style>
+    <style>
+        .L {
+        position: relative;
+        bottom: 15px;
+        font-size: 20px;
+        color: black;
+        }
+    </style>
+    <div class="row1">
+        <div class="col3">
+            <div class="principal"><style>
+                .principal {
+                position: relative;
+                
+                
+                }
+                </style>
+                <div class="centro"><a href="{% url 'm-crear'%}"><p class="L">Medico Nuevo</p></a></div>
+                <div class="centro "><a href=""><p class="L">Buscar Medicos</p></a></div>
+                <div class="centro"><a href="{% url 'm-listar'%}"><p class="L">Listar Medicos</p></a></div>
+                <div class="centro"><a href="{% url 'm-modificar'%}"><p class="L">Modificar Medicos</p></a></div>
                 <style type="text/css">
                 a{text-decoration: none;
                 color: black;}

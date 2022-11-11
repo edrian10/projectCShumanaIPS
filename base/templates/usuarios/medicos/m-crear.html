@@ -1,6 +1,7 @@
 {% extends 'partials/body2.html' %} 
 {% load static %} 
 {% block contenido %}
+<a href="{% url 'medicos'%}"><button type="button" class="btn btn-primary">Atras</button></a>
 <div class="container"><style>
     .container{
         position: relative;
@@ -8,7 +9,13 @@
     }
 </style>
     <div class="row">
-        <form  class="formulario1">
+        <form  class="formulario1"><style>
+            .formulario1{
+            position:relative;
+            right:40rem;
+            bottom:50px;
+            }
+        </style>
             <div class="col-12">
                 <input type="date" values="2022-11-01"step="1">
                 <label for="inputAddress"class="form-label">Fecha de Registro</label>
@@ -40,6 +47,14 @@
             <option value="5">Pasaporte</option>
         </select>
     </div>
+    <style type="text/css">
+        body{
+            background-image: url("{% static 'img/enfermera.jpg' %}");
+        }
+    a{text-decoration: none;
+    color: black;}
+    </style>
+
     <div class="col-6">
         <label for="number"class="form-label">Número de documento</label>
         <input type="number" class="form-control" id="numberInput" placeholder=""class="validate">
@@ -61,11 +76,17 @@
         </select>
     </div>
 </form>
-<div class="contenedor3">
-    <div class="row3"><style>
+<div class="contenedor3"><style>
+    .contenedor3{
+    position:relative;
+    right:27rem;
+    bottom:5rem;
+    }
+</style>
+    <div class="row3"><<style>
         .row3{
             position: relative;
-            left: 28rem;
+            right:20rem;
         }
     </style>
         <button type="button" class="btn btn-warning">Limpiar</button>

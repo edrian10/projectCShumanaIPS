@@ -1,20 +1,14 @@
 {% extends 'partials/body2.html' %}
 {% load static %}
 {% block contenido %}
-<div class="container px-5 pb-2 pt-4"><style>
-    body {
-    background-image: url("{% static 'img/doctorDerecha.jpg' %}");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    }
-  </style>
-  
-    <div class="row1"><style>
-        .row1{
-        position:relative;
-        right:40rem
+
+    <div class="row1">
+        <style type="text/css">
+        body{
+            background-image: url("{% static 'img/enfermera3.jpg' %}");
         }
+    a{text-decoration: none;
+    color: black;}
     </style>
         <div class="col3">
             <div class="principal">
@@ -22,7 +16,8 @@
                 <div class="centro "><a href="{% url 'usuarios' %}"><p class="A">Usuarios</p></a></div>
                 <div class="centro "><a href=""><p class="A">Informes</p></a></div>
                 <div class="centro"><a href="{% url 'pacientes' %}"><p class="A">Pacientes</p></a></div>
-                <div class="centro"><a href="{% url 'medicos' %}"><p class="A">Medicos</p></a></div> <style>
+                <div class="centro"><a href="{% url 'medicos' %}"><p class="A">Medicos</p></a></div> 
+                <style>
                     .A {
                     position:relative;
                     bottom:15px;

@@ -2,19 +2,34 @@
 {% load static %} 
 
 {% block contenido %}
-<div class="container">
-    <div class="row1 pt-1 pb-1">
-        <div class="col3 pt-1 pb-1">
+<a href="{% url 'menuP'%}"><button type="button" class="btn btn-primary">Atras</button></a>
+<style type="text/css">
+    body{
+        background-image: url("{% static 'img/enfermera3.jpg' %}");
+    }
+a{text-decoration: none;
+color: black;}
+</style>
+    <div class="row2"><style>
+        .row2 {
+        position: relative;
+        
+        }
+        </style>
+        <div class="col3">
             <div class="principal fs-5">
-                <div class="centro"><a href="{% url 'p-crear'%}">Paciente Nuevo</a></div>
-                <div class="centro "><a href="">Buscar Pacientes</a></div>
-                <div class="centro"><a href="{% url 'p-listar'%}">Listar Pacientes</a></div>
-                <div class="centro"><a href="{% url 'p-modificar'%}">Modificar Pacientes</a></div>
-                <style type="text/css">
-                a{text-decoration: none;
-                color: black;}
+                <div class="centro"><a href="{% url 'p-crear'%}"><p class="A">Paciente Nuevo</p></a></div>
+                <div class="centro "><a href="#"><p class="A">Buscar Pacientes</p></a></div>
+                <div class="centro"><a href="{% url 'p-listar'%}"><p class="A">Listar Pacientes</p></a></div>
+                <div class="centro"><a href="{% url 'p-modificar'%}"><p class="A">Modificar Pacientes</p></a></div>
+                <style>
+                    .A {
+                    position:relative;
+                    bottom:15px;
+                    font-size:20px;
+                    }
                 </style>
-            </div>p-listar
+            </div>
         </div>
     </div>
 </div>

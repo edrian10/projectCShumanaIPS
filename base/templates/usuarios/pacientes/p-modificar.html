@@ -2,10 +2,11 @@
 {% load static %} 
 
 {% block contenido %}
+<a href="{% url 'pacientes'%}"><button type="button" class="btn btn-primary">Atras</button></a>
 <div class="container">
     <style>
         body {
-        background-image: url(img/doctorderech.jpg);
+        background-image: url("{% static 'img/doctorDerecha.jpg' %}");
         background-repeat: no-repeat;
         background-size:cover;
         background-attachment: fixed;
@@ -115,14 +116,14 @@
     </div>
 </form>
 <div class="contenedor3">
-    <div class="row3">
     <div class="row3"><style>
         .row3{
             position: relative;
-            top: 1.4em;
-            left: 12rem;
+            bottom:20px;
+            left: 9rem;
         }
     </style>
+        <button type="button" class="btn btn-warning">Limpiar</button>
         <button type="button" class="btn btn-success">Guardar</button>
         <button type="button" class="btn btn-primary">Modificar</button>
     </div>

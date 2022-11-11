@@ -50,7 +50,7 @@ def paciente(request):
 
 def pacientes_crear(request):
     context={}
-    return render(request,'usuarios/pacientes/crear.html', context)
+    return render(request,'usuarios/pacientes/p-crear.html', context)
 
 def pacientes_listar(request):
     context={}

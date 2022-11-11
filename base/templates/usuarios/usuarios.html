@@ -1,7 +1,15 @@
 {% extends 'partials/body2.html' %} 
 {% load static %} 
 {% block contenido %}
-<div class="container px-5 pb-2 pt-4">
+<a href="{% url 'menuP'%}"><h3 title="Atras"><button type="button" class="btn btn-primary">Atras</button>
+<div class="container px-5 pb-5 pt-5">
+  <style type="text/css">
+    body{
+        background-image: url("{% static 'img/buscar2.jpg' %}");
+    }
+a{text-decoration: none;
+color: black;}
+</style>
   <div class="row1 pt-1 pb-1">
     <div class="col3 pt-1 pb-1">
       <div class="principal">
@@ -20,11 +28,11 @@
             color: black;
           }
         </style>
-        <div class="centro">
+        <div class="centro ">
           <a href="{% url 'u-crear'%}"><p class="L">Crear Usuarios</p></a>
         </div>
       
-        <div class="centro">
+        <div class="centro ">
           <a href="{% url 'u-listar'%}"><p class="L">Listar Usuarios</p></a>
         </div>
         <style>

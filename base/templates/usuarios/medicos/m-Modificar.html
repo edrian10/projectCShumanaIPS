@@ -1,10 +1,11 @@
 {% extends 'partials/body2.html' %} 
 {% load static %} 
 {% block contenido %}
+<a href="{% url 'medicos'%}"><button type="button" class="btn btn-primary">Atras</button></a>
 <div class="container">
     <style>
         body {
-        background-image: url(img/doctorderech.jpg);
+        background-image: url("{% static 'img/doctorDerecha.jpg' %}");
         background-repeat: no-repeat;
         background-size:cover;
         background-attachment: fixed;
@@ -13,7 +14,7 @@
     <div class="row">
         <form  class="formulario1"><style>
             .container{
-                margin-left: 670px;
+                margin-left: 630px;
             }
             .formulario1{
                 max-width: 45rem;
@@ -76,20 +77,30 @@
                     <option value="2">Inactivo</option>
                 </select>
             </form>
+            <section class="botones"><style>
+                .botones{
+                    position: relative;
+                    top: 8rem;
+                    left: 9rem;
+                }
+            </style>
             <div class="contenedor3">
-                <div class="row3"><style>
-                    .row3{
-                        position: relative;
-                        top: 7.5rem;
-                        left: 28rem;
-                    }
-                </style>
+                <div class="row3">
                     <button type="button" class="btn btn-warning">Limpiar</button>
-                    <button type="button" class="btn btn-success">Guardar</button>
                 </div>
+                    <button type="button" class="btn btn-success">Guardar</button>
+                    <button type="button" class="btn btn-primary">Modificar</button>
             </div>
             </div>
+            </section>
         </div>
         </div>
         <div class="contenedor pt-1">
             {% endblock contenido %}
+            <style>
+                .row3{
+                    position: relative;
+                    top: 11rem;
+                    left: 28rem;
+                }
+            </style>
