@@ -1,0 +1,75 @@
+{% extends 'partials/body2.html' %} 
+{% load crispy_forms_tags %}
+{% block contenido %}
+
+<div class="row my-4">
+    <div class="col-md-4">
+
+        <div class="border bg-white p-3">
+            <h4>Agregar Barrios</h4>
+            <hr>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="hidden" name="modal-status" id="modal-status" value="{{modal_status}}">
+                <button class="btn btn-success btn-block" name="form-crear">Agregar Barrio</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Gestiona tus barrios</h3>
+            </div>
+
+            <div class="card-body">
+                <table id="tabla-general" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Codigo</th>
+                            <th>Localidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for barrio in barrios %}
+                        <tr>
+                            <td>{{barrio.barrio}}</td>
+                            <td>{{barrio.codigoBarrio}}</td>
+                            <td>{{barrio.localidad}}</td>
+                            <td>
+                                <div class="row">
+                                    <form action="" method="POST" class="col-4">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="pk" value="{{barrio.id}}">
+                                        <button class="btn btn-primary btn-block" name="form-editar">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </form>
+                                    <form action="" method="POST" class="col-4">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="pk" value="{{barrio.id}}">
+                                        <button class="btn btn-danger btn-block" name="form-eliminar">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+{% endblock contenido %}
+
+
+

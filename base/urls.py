@@ -30,4 +30,5 @@ urlpatterns = [
     path('informes/',include('informes.urls')),
     path('menuPrincipal/',include('menuPrincipal.urls')),
     path('usuarios/',include ('usuarios.urls')),
+    path('lugares/',include ('lugares.urls')),
 ]
