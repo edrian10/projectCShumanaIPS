@@ -6,20 +6,20 @@
     <div class="col-md-4">
 
         <div class="border bg-white p-3">
-            <h4>Agregar Barrios</h4>
+            <h4>Agregar EPS</h4>
             <hr>
             <form action="" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <input type="hidden" name="modal-status" id="modal-status" value="{{modal_status}}">
-                <button class="btn btn-success btn-block" name="form-crear">Agregar Barrio</button>
+                <button class="btn btn-success btn-block" name="form-crear">Agregar EPS</button>
             </form>
         </div>
     </div>
     <div class="col-md-8">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Gestiona tus barrios</h3>
+                <h3 class="card-title">Gestion de EPS</h3>
             </div>
 
             <div class="card-body">
@@ -27,29 +27,28 @@
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Codigo</th>
+                            <th>Ciudad</th>
                             <th>Localidad</th>
-                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for barrio in barrios %}
+                        {% for eps in eps %}
                         <tr>
-                            <td>{{barrio.barrio}}</td>
-                            <td>{{barrio.codigoBarrio}}</td>
-                            <td>{{barrio.localidad}}</td>
+                            <td>{{eps.eps}}</td>
+                            <td>{{eps.ciudad}}</td>
+                            <td>{{eps.localidad}}</td>
                             <td>
                                 <div class="row">
                                     <form action="" method="POST" class="col-4">
                                         {% csrf_token %}
-                                        <input type="hidden" name="pk" value="{{barrio.id}}">
+                                        <input type="hidden" name="pk" value="{{eps.id}}">
                                         <button class="btn btn-primary btn-block" name="form-editar">
                                             <i class="fas fa-edit"></i>
                                         </button>
                                     </form>
                                     <form action="" method="POST" class="col-4">
                                         {% csrf_token %}
-                                        <input type="hidden" name="pk" value="{{barrio.id}}">
+                                        <input type="hidden" name="pk" value="{{eps.id}}">
                                         <button class="btn btn-danger btn-block" name="form-eliminar">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
@@ -70,6 +69,3 @@
 
 
 {% endblock contenido %}
-
-
-
